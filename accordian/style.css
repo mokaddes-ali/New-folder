@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordian-section{
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accordian-container{
+    padding: 15px 25px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+}
+.accordian-heading{
+    padding: 10px;
+    background-color: #d0dbd7;
+    font-size: 22px;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 2px solid #040600;
+}
+.accordian-heading::after{
+    content: '\002B';
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    /* float: right; */
+}
+
+.accordian-active::after{
+    content: '\2212';
+}
+.accordian-content{
+    padding: 10px;
+    background-color: #a7cb60;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+}
